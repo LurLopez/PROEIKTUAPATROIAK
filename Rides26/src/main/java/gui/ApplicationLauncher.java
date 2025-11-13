@@ -11,6 +11,7 @@ import javax.xml.ws.Service;
 import configuration.ConfigXML;
 import dataAccess.DataAccess;
 import domain.Driver;
+import businessLogic.IBFacadeFactory;
 import businessLogic.BLFacade;
 import businessLogic.BLFacadeFactory;
 import businessLogic.BLFacadeImplementation;
@@ -38,7 +39,7 @@ public class ApplicationLauncher {
 
 		try {
 			
-			BLFacadeFactory faktoria = new BLFacadeFactory();
+			IBFacadeFactory faktoria = new BLFacadeFactory();
 			BLFacade appFacadeInterface = faktoria.getBLFacade();
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 						

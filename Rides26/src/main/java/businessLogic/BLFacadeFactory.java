@@ -8,7 +8,7 @@ import dataAccess.DataAccess;
 import businessLogic.BLFacade;
 import businessLogic.BLFacadeImplementation;
 
-public class BLFacadeFactory {
+public class BLFacadeFactory implements IBFacadeFactory{
 
     public BLFacade getBLFacade() throws Exception {
         ConfigXML c = ConfigXML.getInstance();
